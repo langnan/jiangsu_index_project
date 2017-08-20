@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>江苏省地方税务局全省信息技术资产监控与管理平台</title>
+    <link rel="stylesheet" href="css/large-screen-common.css">
+    <link rel="stylesheet" href="../libs/font_adao1rbxh1dfs9k9/iconfont.css">
+    <link rel="stylesheet" href="../libs/Fonts/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../libs/jquery-1.11.3.js"></script>
+    <script src="../libs/echarts.min.js"></script>
+</head>
+<body>
+<!--导航条部分-->
+<div class="nav">
+    <div class="nav_sub">
+        <div class="logo">
+            <img src="images/logo.png" alt="图片读取失败" style="max-width:100%;">
+        </div>
+
+    </div>
+</div>
+
+<!--指标内容显示部分-->
+<div class="content">
+    <div class="content_sub">
+        <!--以下为内容区左侧部分-->
+        <div class="content_left">
+            <div class="content_left_one">
+                <h2>基础资源概况</h2>
+                <ul>
+                    <li>
+                        <i class="iconfont">&#xe602;</i>&nbsp;<span>服务器</span>：<span class="hh"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe71c;</i>&nbsp;<span>网络设备</span>：<span class="name"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe60d;</i>&nbsp;<span>存储设备</span>：<span class="sex"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe603;</i>&nbsp;<span>安全设备</span>：<span class="age"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe61a;</i>&nbsp;<span>IP地址</span>：<span class="tel"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe792;</i>&nbsp;<span>虚拟化资源</span>：<span class="width"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe64f;</i>&nbsp;<span>在用域名</span>：<span class="height"></span>台
+                    </li>
+                    <li>
+                        <i class="iconfont">&#xe6de;</i>&nbsp;<span>软件系统</span>：<span class="_class"></span>台
+                    </li>
+                </ul>
+            </div>
+            <div class="content_left_two">
+                <h2>虚拟化资源概况</h2>
+                        <div class="jindu">
+                            <!--<h3 class="progress-title">CPU总数</h3>
+                            <div class="progress">
+                                &lt;!&ndash;<div class="progress-bar" style="width:70%; background:#06d7ea;">
+                                    <div class="progress-value">70%</div>
+                                </div>&ndash;&gt;
+                            </div>
+
+                            <h3 class="progress-title">内存总数</h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:90%; background:#06d7ea;">
+                                    <div class="progress-value">90%</div>
+                                </div>
+                            </div>
+
+                            <h3 class="progress-title">存储容量</h3>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:55%; background:#06d7ea;">
+                                    <div class="progress-value">55%</div>
+                                </div>
+                            </div>-->
+                        </div>
+
+
+            </div>
+            <div class="content_left_three">
+                <h2>IP使用概况</h2>
+                <div id="ip_use" class="ip_use"></div>
+            </div>
+            <div class="content_left_four">
+                <h2>资源变化趋势</h2>
+                <div id="res_qushi" class="res_qushi"></div>
+            </div>
+        </div>
+        <!--以下为内容区中部-->
+        <div class="content_middle">
+            <!--以下为中部第一模块-->
+            <div class="content_middle_one">
+                <div class="content_middle_one_title">
+                    <span>地税核心业务综合健康度</span>
+                </div>
+                <div class="content_middle_one_data">
+                    <!--<div class="content_middle_one_data_01"></div>
+                    <div class="content_middle_one_data_02"></div>
+                    <div class="content_middle_one_data_03"></div>
+                    <div class="content_middle_one_data_04"></div>-->
+                    <ul class="_health">
+                        <!--<li class="content_middle_one_data_01">
+                            <span>9</span>
+                        </li>
+                        <li class="content_middle_one_data_02">
+                            <span>7</span>
+                        </li>
+                        <li class="content_middle_one_data_03">
+                            <span>6</span>
+                        </li>
+                        <li class="content_middle_one_data_04">
+                            <span>0</span>
+                        </li>-->
+                    </ul>
+                    <div class="point"></div>
+                </div>
+                <div class="data_henliang">
+                    <img src="images/henliangzhi.png" alt="">
+                </div>
+                <div class="data_shitu">
+                    <ul>
+                        <li class="business_btn">
+                            <a href="http://www.baidu.com" target="_self">
+                                <img src="images/business_btn_bg.png">
+                            </a>
+                        </li>
+                        <li class="apply_btn">
+                            <a href="javascript:;">
+                                <img src="images/apply_btn_bg.png">
+                            </a>
+                        </li>
+                        <li class="internet_btn">
+                            <a href="javascript:;">
+                                <img src="images/internet_btn_bg.png">
+                            </a>
+                        </li>
+                        <li class="engine_btn">
+                            <a href="javascript:;">
+                                <img src="images/engine%20room_btn_bg.png">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--以下为中部第二模块-->
+            <div class="content_middle_two">
+                <h2>业务运行情况(历史)</h2>
+                <div id="yewu_history" class="yewu_history" style="width:766px;height:270px;"></div>
+            </div>
+        </div>
+        <!--以下为内容区右侧-->
+        <div class="content_right">
+            <!--右侧第一模块-->
+            <div class="content_right_one">
+                <h2>系统运行事件(告警趋势)</h2>
+                <div id="gaojin_qushi" class="gaojin_qushi"></div>
+            </div>
+            <!--右侧第二模块-->
+            <div class="content_right_two">
+                <h2>系统运行事件(告警统计)</h2>
+                <div id="gaojin_tongji0" class="gaojin_tongji0"></div>
+                <div id="gaojin_tongji1" class="gaojin_tongji1"></div>
+            </div>
+            <!--右侧第三模块-->
+            <div class="content_right_three">
+                <h2>核心系统(运行状态趋势)</h2>
+                <div id="hexin_qushi" class="hexin_qushi"></div>
+            </div>
+            <!--目前时间-->
+            <div class="date-time"></div>
+        </div>
+    </div>
+  </div>
+
+ <!--echarts组件模块-->
+<script src="js/ip.js"></script>
+
+<script src="js/res_qushi.js"></script>
+
+ <script src="js/yewu_history.js"></script>
+
+ <script src="js/hexin_qushi.js"></script>
+
+<script src="js/date-time.js"></script>
+
+<script src="js/gaojin_qushi.js"></script>
+
+<script src="js/gaojin_tongji0.js"></script>
+
+<script src="js/gaojin_tongji1.js"></script>
+
+<script src="js/index.js"></script>
+
+ </body>
+</html>

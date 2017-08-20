@@ -1,0 +1,11 @@
+@font-face
+{
+    font-family: LcdD;
+    src: url('../Fonts/LcdD.TTF')format("TrueType") ;
+    src:url('../Fonts/lcdd-webfont.eot')format("eot"),
+         url('../Fonts/lcdd.ttf')format("truetype"),
+         url('../Fonts/lcdd-webfont.svg')format("svg"),
+         url('../Fonts/lcdd-webfont.woff')format("woff"),
+         url('../Fonts/lcdd-webfont.woff2')format("woff2");
+
+}
